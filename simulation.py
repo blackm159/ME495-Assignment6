@@ -13,7 +13,7 @@ class SIMULATION:
 
         if (directOrGUI == "GUI"):
             self.physicsClient = p.connect(p.GUI)
-            self.timeSleep = 0.0075
+            self.timeSleep = 0.005 #0.0075
         else: 
             self.physicsClient = p.connect(p.DIRECT)
             self.timeSleep = 0.00

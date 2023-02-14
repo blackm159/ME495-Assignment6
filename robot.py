@@ -10,7 +10,7 @@ from motor import MOTOR
 class ROBOT:
     def __init__(self, solutionID):
         self.myID = solutionID
-        self.robotId = p.loadURDF("body.urdf")
+        self.robotId = p.loadURDF("body" + str(self.myID) +".urdf")
         self.nn = NEURAL_NETWORK("brain" + str(self.myID) +".nndf")
 
         os.system("del brain" + str(self.myID) + ".nndf")

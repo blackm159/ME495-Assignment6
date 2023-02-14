@@ -1,13 +1,13 @@
-# ME495-Assignment5
+# ME495-Assignment6
  
 ## Information
-#### This robot moves in the +y direction and evolves to move the furtherest
-#### The goal is for the robot to flip and roll as far as possible during the simulation
+#### The goal of this assignment is to grow a random chain of motorized joints with a random number of sensor links
+#### Link to video example: https://youtu.be/P_x4gbmoOFs
 ####  
 
 ## How to run
 #### Download all files, install pybullet, and run:
-#### py search.py
+#### py mainTemp.py
 ####  
 
 ## Sources

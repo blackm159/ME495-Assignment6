@@ -6,8 +6,9 @@ import os
 class PARALLEL_HILL_CLIMBER:
     def __init__(self):
         os.system("del brain*.nndf")
-        os.system("del fitness*.nndf")
-        os.system("del tmp*.nndf")
+        os.system("del body*.urdf")
+        os.system("del fitness*.txt")
+        os.system("del tmp*.txt")
         # self.parent = SOLUTION()
         self.nextAvailableID = 0
         self.parents = {}

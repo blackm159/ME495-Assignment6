@@ -1,4 +1,5 @@
 import numpy as np
+import random
 
 simLength = 1000
 
@@ -25,7 +26,13 @@ backLegMotorValues = backLegAmplitude * np.sin(backLegFrequency *
 numberOfGenerations = 1
 populationSize = 1
 
-numSensorNeurons = 7
-numMotorNeurons = 6
+seed = random.randint(0,100)
+
+random.seed(seed)
+
+numLinks = random.randint(3,10)
+
+numSensorNeurons = random.randint(1,numLinks)
+numMotorNeurons = numLinks - 1
 
 motorJointRange = 0.3 #this does something with angle values
